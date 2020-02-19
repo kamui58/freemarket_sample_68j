@@ -1,0 +1,54 @@
+.purchases__Header
+
+.purchases__Main
+  .Main__header
+    商品内容の確認
+  .Main__content
+    .Main__content__date
+      .item
+      .value
+        .itemName
+          商品名
+        .itemDate
+          .itemValue
+            ¥2,500円
+          .itemTax
+            (税込み) 送料込み
+  .Main__buy
+    .Main__buy__content
+      .Main__buy__content__value
+        .left
+          支払い金額
+        .rigth
+          ¥2,500円
+      .Main__buy__content__point
+        ポイントを使用
+      .Main__buy__content__method
+        .method
+          支払い方法
+        .logIn
+          = link_to "#", class: "logIn" do
+            登録してください
+      .Main__buy__content__address
+        .address
+          配送先
+        .logIn
+          = link_to "#", class: "logIn" do
+            登録してください
+      .Main__buy__content__btn
+        .note
+          %Pこの商品はゆうゆうメルカリ便をしようしているため、   
+          %Pアプリのみ購入できます。
+        .buyBtn
+          = link_to "#", class: "btn" do
+            購入ボタン
+        .instoreVav
+          %Pアプリをお持ちでに方は以下よりインストールして   
+          %pご利用頂けます。
+        .appli
+          .app
+          = link_to image_tag ( "//www-mercari-jp.akamaized.net/assets/img/common/common/app-store.svg?35314277")
+          .google
+          = link_to image_tag ( "//www-mercari-jp.akamaized.net/assets/img/common/common/google-play.svg?35314277")
+
+.purchases_Footer

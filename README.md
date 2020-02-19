@@ -33,7 +33,9 @@
 |first_name|string|null: false|
 |family_furigana|string|null: false|
 |first_furigana|string|null: false|
-|birthday|integer|null: false|
+|birthday_year|integer|null: false|
+|birthday_month|integer|null: false|
+|birthday_day|integer|null: false|
 
 ### Association
 - has_one :addresses

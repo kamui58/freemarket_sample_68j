@@ -1,0 +1,223 @@
+.Box
+  .userHeader
+    ここはヘッダーです
+  .Main
+    .UserInputTitle
+      会員情報入力
+    %form.Input
+      .Input__nickname
+        .Input__nickname__text.SideType
+          .Input__nickname__text.bold
+            ニックネーム
+          .Input__nickname__text.red
+            必須
+        %input{type: "text", placeholder: "　例）フリマ太郎", class: "Input__nickname__form"}
+
+      .Input__email
+        .Input__email__text.SideType
+          .Input__email__text.bold
+            メールアドレス
+          .Input__email__text.red
+            必須
+        %input{type: "text", placeholder: "　PC・携帯どちらでも可", class: "Input__email__form"}
+
+      .Input__password
+        .Input__password__text.SideType
+          .Input__password__text.bold
+            パスワード
+          .Input__password__text.red
+            必須
+        %input{type: "text", placeholder: "　7文字以上の半角英数字", class: "Input__password__form"}
+
+        .Input__password.Note
+          ※英字と数字の両方を含めて設定してください
+        .Input__password__checkbox
+          %input{type: "checkbox"}
+          パスワードを表示する
+
+      .Input__name
+        .Input__name__title.bold
+          本人確認
+        .Input__name__description
+          安心・安全にご利用いただくために、お客さまの本人情報の登録にご協力ください。他のお客さまに公開されることはありません。
+        .Input__name__text.SideType
+          .Input__name__text.bold
+            お名前(全角)
+          .Input__name__text.red
+            必須
+        .Input__name__fullname
+          %input{type: "text", placeholder: "　例）山田", class: "Input__name__fullname__familyname"}
+          %input{type: "text", placeholder: "　例）彩", class: "Input__name__fullname__firstname"}
+
+
+        .Input__name__text.SideType
+          .Input__name__text.bold
+            お名前カナ(全角)
+          .Input__name__text.red
+            必須
+        .Input__name__furigana
+          %input{type: "text", placeholder: "　例）ヤマダ", class: "Input__name__furigana__familyname"}
+          %input{type: "text", placeholder: "　例）アヤ", class: "Input__name__furigana__firstname"}
+      .Input__birthday
+        .Input__birthday__text.SideType
+          .Input__birthday__text.bold
+            生年月日
+          .Input__birthday__text.red
+            必須
+        .Input__birthday__select
+          .Input__birthday__select__year
+            %select{name: "year", class: "select__form"}
+
+              %option{value: "--"} -- 
+              %option{value: 1990}
+                1990
+              %option{value: 1991}
+                1991
+              %option{value: 1992}
+                1992
+              %option{value: 1993}
+                1993
+              %option{value: 1994}
+                1994
+              %option{value: 1995}
+                1995
+              %option{value: 1996}
+                1996
+              %option{value: 1997}
+                1997
+              %option{value: 1998}
+                1998
+              %option{value: 1999}
+                1999
+              %option{value: 2000}
+                2000
+              %option{value: 2001}
+                2001
+              %option{value: 2002}
+                2002
+              %option{value: 2003}
+                2003
+              %option{value: 2004}
+                2004
+              %option{value: 2005}
+                2005
+              %option{value: 2006}
+                2006
+              %option{value: 2007}
+                2007
+              %option{value: 2008}
+                2008
+              %option{value: 2009}
+                2009
+              %option{value: 2010}
+                2010
+            %span
+              年
+              
+          .Input__birthday__select__month
+            %select{name: "month", class: "select__form"}
+              %option{value: "--"} --
+              %option{value: 1}
+                1
+              %option{value: 2}
+                2
+              %option{value: 3}
+                3
+              %option{value: 4}
+                4
+              %option{value: 5}
+                5
+              %option{value: 6}
+                6
+              %option{value: 7}
+                7
+              %option{value: 8}
+                8
+              %option{value: 9}
+                9
+              %option{value: 10}
+                10
+              %option{value: 11}
+                11
+              %option{value: 12}
+                12
+            %span
+              月
+          .Input__birthday__select__day
+            %select{name: "day", class: "select__form"}
+              %option{value: "--"} --
+              %option{value: 1}
+                1
+              %option{value: 2}
+                2
+              %option{value: 3}
+                3
+              %option{value: 4}
+                4
+              %option{value: 5}
+                5
+              %option{value: 6}
+                6
+              %option{value: 7}
+                7
+              %option{value: 8}
+                8 
+              %option{value: 9}
+                9
+              %option{value: 10}
+                10
+              %option{value: 11}
+                11
+              %option{value: 12}
+                12
+              %option{value: 13}
+                13
+              %option{value: 14}
+                14
+              %option{value: 15}
+                15
+              %option{value: 16}
+                16
+              %option{value: 17}
+                17
+              %option{value: 18}
+                18
+              %option{value: 19}
+                19
+              %option{value: 20}
+                20
+              %option{value: 21}
+                21
+              %option{value: 22}
+                22
+              %option{value: 23}
+                23
+              %option{value: 24}
+                24
+              %option{value: 25}
+                25
+              %option{value: 26}
+                26
+              %option{value: 27}
+                27
+              %option{value: 28}
+                28
+              %option{value: 29}
+                29
+              %option{value: 30}
+                30
+              %option{value: 31}
+                31
+            %span    
+              日
+      .Input__submit
+        .Input__submit__text.Note
+          ※本人情報は正しく入力してください。会員登録後、修正するにはお時間をいただく場合があります。
+        .Input__submit__description
+          「登録する」のボタンを押すことにより、
+          = link_to "#" do
+            利用規約
+          に同意したものとみなします
+        .Input__submit__btn
+          %input.userBtn{type: "submit", value: "登録する"}
+  .Footer

@@ -1,0 +1,104 @@
+.WrapperLogin{
+  height: 200vh;
+  width: 100%;
+  background-color: rgb(246, 246, 250)
+}
+
+.Session {
+  height: 610px;
+  width: 35%;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  &__sign {
+    height: 170px;
+    width: 100%;
+    border-bottom: 0.2px solid lightgrey;
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      padding-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    &--btn{
+       text-decoration: none;
+       color: white;
+       background-color: deepskyblue;
+       padding: 15px 120px;
+       margin-left: 80px;
+       cursor: pointer;
+    
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+
+  }
+
+  &__input {
+    height: 330px;
+    width: 100%;
+   
+
+    .field {
+      text-align: center;
+      padding-top: 50px;
+      
+    }
+
+      &--mail {
+        height: 60px;
+        width: 90%;
+        padding-left: 20px;
+      
+      }
+
+      &--pass {
+        height: 60px;
+        width: 90%;
+        padding-left: 20px;
+      }
+    
+    &--btn {
+      border-style: none;
+      background-color: red;
+      color: white;
+      display: block;
+      margin: 50px auto;
+      padding: 15px 194px;
+    
+      &:hover{
+        opacity: 0.6;
+      }
+    }
+
+    &--forget {
+      text-decoration: none;
+      color: deepskyblue;
+      margin-left: 30px;
+      display: inline-block;
+      position: relative;
+    
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #2196F3;
+      transition: all 0s ease 0s;
+    }
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+ }  
+}

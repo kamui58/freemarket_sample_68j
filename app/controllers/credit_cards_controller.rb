@@ -1,4 +1,5 @@
 class CreditCardsController < ApplicationController
-  def index
+  def new
+    
   end
 end

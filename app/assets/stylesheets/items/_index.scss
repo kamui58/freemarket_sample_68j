@@ -1,0 +1,452 @@
+.Wrapper{
+  background-color: #f8f8f8;
+
+  .Header{
+    height: 98px;
+    padding: 0 60px;
+    background-color: #514;  
+  }
+
+  .Main{
+    font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
+    width: 100%;
+    .MainMainVisual{
+      height: 560px;
+      background-image:url('bg-mainVisual-pict_pc.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+      position: relative;
+      padding: 0 60px;
+      display: flex;
+      align-items: center;
+      .Contennt{
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 110px 0 0 0;
+      
+        .ContentSubTitle{
+          text-shadow: 0 0 5px rgba(0,0,0,0.4);
+          font-size: 60px;
+          line-height: 1.2;
+          color: #fff;
+        }
+        .ContentText{
+          text-shadow: 0 0 5px rgba(0,0,0,0.4);
+          font-size: 18px;
+          color: #fff;
+          line-height: 1.77778;
+          margin: 16px 0 0 0;
+        }
+        .ContentBtn{
+          display: flex;
+          margin: 24px 0 0 0;
+          box-sizing: border-box;
+          .MainVisualBtnA{
+            margin-right: 10px;
+            width: 180px;
+          }
+          .MainVisualBtnA:hover{
+            opacity: 0.6;
+          }
+
+          .MainVisualBtnG{
+            width: 180px;
+            margin-right: 10px;
+          }
+          .MainVisualBtnG:hover{
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    .MainReason{
+      padding: 60px 20px;
+      .SubTitle{
+        text-align: center;
+        font-size: 26px;
+        line-height: 1.4;
+        font-weight: bold;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        position: relative;
+        .SubTitleLine{
+          content: "";
+          width: 70px;
+          height: 4px;
+          background-color: #3CCACE;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .Lists{
+        text-align: center;
+        display: flex;
+        max-width: 1020px;
+        width: 100%;
+        margin: 0 auto;
+        .List{
+          width: 30%;
+          margin: 16px 5% 0 0;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .ListPict{
+            position: relative;
+            margin-bottom: 20px;
+            .Number{
+              display: inline-block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 4%;
+              font-size: 30px;
+              text-align: center;
+              margin: 0 5px 0 0;
+              padding: 10px 20px;
+              background-color: #3CCACE;
+              color: #fff;
+            }
+            .Img{
+              width: 306px;
+              vertical-align: bottom;
+            }
+          }
+          .ListText{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 50px;
+            margin: 0 0 0 2px;
+            span{
+              color: #3CCACE;
+            }
+          }
+          .ListDescription{
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 16px 0 0;
+          }
+        }
+      }
+    }
+    .MainMiddleDl{
+      background-image: url('bg-topMiddleDl-pict.jpg');
+      background-position: bottom right;
+      height: 400px;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      .MainMiddleDlInner{
+        color: #fff;
+        text-shadow: 0 0 5px rgba(0,0,0,0.4);
+        text-align: left;
+        max-width: 1040px;
+        width: 100%;
+        margin: 0 auto;
+        .middleSubtitle{
+          font-size: 27px;
+          font-weight: bold;
+          line-height: 1.4;
+        }
+        .Text{
+          font-size: 18px;
+          margin: 20px 0 30px;
+          line-height: 1.5;    
+        }
+        .MiddleDlBtn{
+          display: flex;
+
+          .MiddleDlBtnA{
+            width: 180px;
+            margin-right: 10px;
+          }
+          .MiddleDlBtnA:hover{
+            opacity: 0.6;
+          }
+
+          .MiddleDlBtnG{
+            width: 180px;
+            margin-right: 10px;
+          }
+          .MiddleDlBtnG:hover{
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    .MainCharateristic{
+      padding: 60px 100px;
+      background-color: #fff;
+      .Head{
+        font-size: 27px;
+        text-align: center;
+        margin: 0 0 40px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        position: relative;
+        .HeadLine{
+          content: "";
+          width: 70px;
+          height: 4px;
+          background-color: #3CCACE;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .Lists{
+        max-width: 1020px + 20px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        .List{
+          display: flex;
+          flex-direction: column;
+          width: calc(1 / 3 * 100%);
+          text-align: center;
+          padding: 0 20px;
+          .ListImg{
+            width: 70%;
+            margin: 0 auto;
+            line-height: 120px;
+            .Img{
+              width: 100%;
+              vertical-align: bottom;
+            }
+          }
+          .ListSubtitle{
+            margin: 38px 0 10px;
+            font-size: 19px;
+            font-weight: bold;
+          }
+          .ListDetail{
+            margin: 0 0 40px;
+            font-size: 17px;
+            font-weight: 200;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+
+
+    .MainPicupCategory{
+      padding: 80px 0 0;
+      background-color: #f8f8f8;
+      height: 100%;
+      .Head{
+        text-align: center;
+        font-size: 28px;
+        line-height: 1.4;
+        font-weight: bold;
+      }
+      .ProductBox{
+        .ProductHead{
+          text-align: center;
+          a{
+            font-size: 24px;
+            text-decoration-line: none;
+            color: #3CCACE;
+            .Title{
+              font-size: 100%;
+              font-weight: normal;    
+              font-weight: bold;
+            }
+          }
+        }
+        .ProductLists{
+          width: 780px;
+          margin: 26px auto;
+          display: flex;
+          justify-content: space-around;
+          a{
+            text-decoration-line: none;
+            background-color: #fff;
+            display: inline-block;
+            .ProductList--img{
+              width: 220px;
+              height: 150px;
+              position: relative;
+              overflow: hidden;
+              margin: 0;
+              z-index: auto;
+              Img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                z-index: auto;
+                height: 150px;
+                object-fit: cover;
+              }
+            }
+            .ProductList--body{
+              background-color: white;
+              color: #333;
+              padding: 16px;
+              .Name{
+                overflow: hidden;
+                line-height: 1.5;
+                font-size: 16px;
+                text-align: left;
+              }
+              .Details{
+                font-size: 16px;
+                ul{
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  li{
+                    margin: 0;
+                    padding: 0;
+                    .i{
+                      display: inline-block;
+                      font-size: inherit;
+                      text-rendering: auto;
+                      -webkit-font-smoothing: antialiased;
+                    }
+                  }
+                }
+                p{
+                  font-size: 10px;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+    .MainPicupBrand{
+      padding: 80px 0 80px;
+      background-color: #f8f8f8;
+      height: 100%;
+      .Head{
+        text-align: center;
+        font-size: 28px;
+        line-height: 1.4;
+        font-weight: bold;
+      }
+      .ProductBox{
+        margin: 0;
+        padding: 0;
+        .ProductHead{
+          text-align: center;
+          a{
+            font-size: 24px;
+            text-decoration-line: none;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
+            color: #3CCACE;
+            h3{
+              font-weight: bold;
+            }
+          }
+        }
+        .ProductLists{
+          width: 780px;
+          margin: 26px auto;
+          display: flex;
+          justify-content: space-around;
+          .ProductList{
+            width: 220px;
+            display: inline-block;
+            float: left;
+            a{
+              text-decoration-line: none;
+              background-color: #fff;
+              display: inline-block;
+              .ProductList--img{
+                width: 220px;
+                height: 150px;
+                position: relative;
+                overflow: hidden;
+                margin: 0;
+                z-index: auto;
+                Img{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  width: 100%;
+                  z-index: auto;
+                  height: 150px;
+                  object-fit: cover;
+                }
+              }
+              .ProductList--body{
+                background-color: white;
+                color: #333;
+                padding: 16px;
+                h3{
+                  overflow: hidden;
+                  line-height: 1.5;
+                  font-size: 16px;
+                  text-align: left;
+                }
+                .Details{
+                  font-size: 16px;
+                  ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    li{    
+                      margin: 0;
+                      padding: 0;
+                      i{
+                        display: inline-block;
+                        font-size: inherit;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                      }
+                    }
+                  }
+                  p{
+                    font-size: 10px;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Btn{
+    box-sizing: border-box;
+    .PurchaseBtn{
+      width: 90px;
+      background: #3CCACE;
+      text-align: center;
+      border-radius: 4%;
+      bottom: 32px;
+      right: 32px;
+      position: fixed;
+      padding: 15px;
+      text-decoration: none;
+      &__text{
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      &__icon{
+        width: 60%;
+      }
+    }
+  }
+
+}
