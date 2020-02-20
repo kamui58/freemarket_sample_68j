@@ -5,14 +5,14 @@
 |name|string|null: false|
 |price|integer|null: false|
 |status|integer|null: false|
-|description|string|null: false|
+|description|text|null: false|
 |charge|string|null: false|
 |area|string|null: false|
 |day|string|null: false|
 |sale|integer|null: false|
 |user_id|references|null: false, foreign_key: true|
-|category_id|references|null: false, foreign_key: ture|
-|brand_id|references|null: false, foreign_key: ture|
+|category_id|references|null: false, foreign_key: true|
+|brand_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
