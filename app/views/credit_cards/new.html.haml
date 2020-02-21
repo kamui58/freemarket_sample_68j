@@ -2,13 +2,13 @@
   .Contents
     .Contents__title
       クレジットカード情報入力
-    .Contents__card
+    = form_tag(pay_credit_card_index_path, method: :post,　Contents__card, id: 'charge-form', name: "inputForm") do
       .Contents__card__name
         .Contents__card__name--text
           カード番号
         .Contents__card__name--must
           必須
-      %input.Contents__card--input{ name: :card, placeholder: :"半角英数字のみ", type: :card, value: :"" }/
+      = text_field_tag "number", "", class: "number", class: "Contents__card--input", placeholder: "半角数字のみ", maxlength: "16", type: "text", id: "card_number"
       .Contents__card__picture
         =image_tag "/assets/visa.svg", class: "Contents__card__picture__phot"
         =image_tag "/assets/master-card.svg", class: "Contents__card__picture__phot"
@@ -24,7 +24,7 @@
         .Contents__date__name--must
           必須
       .Contents__date__name--select
-        %select{name: :'date', class: "Contents__date__name--select__num"}
+        %select#exp_month{name: "exp_month", type: "text", class: "Contents__date__name--select__num"}
           %option{label: :"01", value: :"" }
           %option{label: :"02", value: :"" }
           %option{label: :"03", value: :"" }
@@ -39,7 +39,7 @@
           %option{label: :"12", value: :"" }
         月
 
-        %select{name: :'date', class: "Contents__date__name--select__num"}
+        %select#exp_year{name: "exp_year", type: "text", class: "Contents__date__name--select__num"}
           %option{label: :"20", value: :"" }
           %option{label: :"21", value: :"" }
           %option{label: :"22", value: :"" }
@@ -51,15 +51,16 @@
           %option{label: :"28", value: :"" }
           %option{label: :"29", value: :"" }
           %option{label: :"30", value: :"" }
-        日
+        年
 
       .Contents__card__name
         .Contents__card__name--text
           セキュリティコード
         .Contents__card__name--must
           必須
-      %input.Contents__card--input{ name: :card, placeholder: :"カード背面4桁もしくは3桁の番号", type: :card, value: :"" }/
+      = text_field_tag "cvc", "", class: "cvc", class: "Contents__card--input", placeholder: "カード背面3~4桁の番号", maxlength: "4", id: "cvc"
+
 
     .Contents__Exhibition
       .Contents__Exhibition__btn
-        = link_to "追加する", "#", class: "Contents__Exhibition__btn--btn"
+        = submit_tag "追加する", id: "token_submit", class: "Contents__Exhibition__btn--btn"
