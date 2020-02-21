@@ -1,2 +1,3 @@
 class CreditCard < ApplicationRecord
+
 end
