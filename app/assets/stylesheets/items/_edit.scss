@@ -497,12 +497,26 @@
           }
         }
         &__btn{
-            margin-top: 50px;
-            text-decoration: none;
-            width: 80%;
-            margin-left: 80px;
-            padding: 15px 50px;
-            color: white;
+          margin-top: 50px;
+          text-decoration: none;
+          width: 80%;
+          margin-left: 80px;
+          padding: 15px 50px;
+          color: white;
+
+            &--btn{
+              height: 50px;
+              width: 100%;
+              font-size: 14px;
+              text-decoration: none;
+              color: white;
+              border-radius: 4px;
+              background-color: red;
+              text-align: center;
+              line-height: 50px;
+              margin-bottom: 5px;
+              cursor: pointer;
+            }
 
 
             &--return {

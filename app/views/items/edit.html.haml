@@ -72,13 +72,13 @@
             .form.relative#editSelect
               = f.collection_select :category_id, @parents, :id, :genre,{include_blank: "選択してください", selected: @item.category.parent.parent.id}, class: "select-default", id: "editParent_form", genre: 'item[category_ids][]'
               = icon('fa', 'chevron-down', class: 'icon')
-            .editRemove.relative
-              = f.collection_select :category_id, @ctgrChild, :id, :genre,{selected: @item.category.parent.id}, class: "select-default", id: "rm_m_editParent_form", genre: 'item[category_ids][]'
-              = icon('fa', 'chevron-down', class: 'icon')
-            .editRemove.relative
-              = f.collection_select :category_id, @ctgrGrandchild, :id, :genre,{selected: @item.category.id}, class: "select-default", id: "rm_s_editParent_form", genre: 'item[category_ids][]'
-              = icon('fa', 'chevron-down', class: 'icon')
-              #Input_error__edit__category
+              .editRemove1.relative
+                = f.collection_select :category_id, @ctgrChild, :id, :genre,{selected: @item.category.parent.id}, class: "select-default", id: "rm_m_editParent_form", genre: 'item[category_ids][]'
+                = icon('fa', 'chevron-down', class: 'icon')
+              .editRemove2.relative
+                = f.collection_select :category_id, @ctgrGrandchild, :id, :genre,{selected: @item.category.id}, class: "select-default", id: "rm_s_editParent_form", genre: 'item[category_ids][]'
+                = icon('fa', 'chevron-down', class: 'icon')
+                #Input_error__edit__category
 
 
           .EditContents__detail__list__brand
@@ -183,7 +183,7 @@
         
         .Contents__Exhibition__btn
 
-          = f.submit "この内容で編集する", class: "EditContents__Exhibition__btn", id: "ItemInput__edit__btn"
+          = f.submit "この内容で編集する", class: "EditContents__Exhibition__btn--btn", id: "ItemInput__edit__btn"
 
         
           = link_to "もどる", "#", class: "EditContents__Exhibition__btn--return"

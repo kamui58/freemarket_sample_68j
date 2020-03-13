@@ -50,7 +50,7 @@
           .addresses__text
             配送先
           .addresses__number
-            = "〒" + (@address.number).to_s[0..2] + (@address.number).to_s[-4..-1]
+            = ("〒" + @address.number.to_s)
           .addresses__address
             = (@address.prefecture) + (@address.municipality) + (@address.street) + (@address.building)
           .addresses__name
