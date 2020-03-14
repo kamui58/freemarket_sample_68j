@@ -34,7 +34,7 @@ $(function() {
  // Lカテゴリーが選択された時のアクション
  $("#editParent_form").on('change', function() {
    l_cat = $(this).val()
-   $(".editRemove, #m_editCategory, #s_editCategory").remove()
+   $(".editRemove1, .editRemove2, #m_editCategory, #s_editCategory").remove()
 
    $.ajax({
      type: "GET",
